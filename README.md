@@ -72,3 +72,15 @@ Enable the vhost
 ```
 sudo a2ensite test.com.conf
 ```
+
+### Swicth Php version
+Change the version of Php apache2:
+```
+sudo a2dismod php7.2
+sudo a2enmod php5.6
+sudo service apache2 restart
+```
+Change the version of php cli:
+```
+sudo update-alternatives --set php /usr/bin/php7.0
+```
