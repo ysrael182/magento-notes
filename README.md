@@ -27,7 +27,8 @@ The version recommended to Magento 2, it's 5.6 or 5.7
 apt-get -y install mysql-server mysql-client
 ```
 it's highly recommended add a password to the root user.
-if in case the installation did not ask for password and a you can not enter to mysql use:
+
+If in case the installation did not ask for password and a you can not enter to mysql use:
 ```
 sudo mysqld_safe --skip-grant-tables&
 sudo mysql --user=root mysql
@@ -37,7 +38,7 @@ quit
 sudo service mysql restart
 sudo mysql -u root -p
 exit
-
+#reset the default password of root
 ```
 ### Install Php
 The version recommended of Php to Magento 2, it's PHP 7.0.6 - 7.0.x and PHP 7.1.x.
