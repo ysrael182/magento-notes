@@ -65,7 +65,10 @@ And Restart Apache
 ```
 sudo systemctl restart apache2
 ```
-
+Note: If the phpmyadmin's url is not available, you must to create a symlink:
+```
+sudo ln -s /usr/share/phpmyadmin /var/www/
+```
 ### Enable vhost 
 First step copy the default 
 ```
