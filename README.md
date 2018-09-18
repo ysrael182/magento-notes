@@ -87,8 +87,8 @@ sudo a2ensite test.com.conf
 Change the version of Php apache2:
 ```
 sudo a2dismod php7.2
-sudo a2enmod php5.6
-sudo service apache2 restart
+sudo a2enmod php7.0
+sudo service restart apache2
 ```
 Change the version of php cli:
 ```
