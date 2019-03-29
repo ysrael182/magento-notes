@@ -82,6 +82,14 @@ Enable the vhost
 ```
 sudo a2ensite test.com.conf
 ```
+vhost for multiple websites
+```
+<VirtualHost *:80>
+    ServerName example.com
+    ServerAlias foo.example.com bar.example.com others.example.com
+    DocumentRoot /www/redirect_folder 
+</virtualhost>
+```
 
 ### Swicth Php version
 Change the version of Php apache2:
