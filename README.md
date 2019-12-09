@@ -40,6 +40,15 @@ sudo mysql -u root -p
 exit
 #reset the default password of root
 ```
+
+Then, whether no solutions have not worked to change the password, you can use the following 
+
+```
+sudo mysql -u root -p
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'new-password';
+sudo service mysql stop
+sudo service mysql start
+```
 ### Install Php
 The version recommended of Php to Magento 2, it's PHP 7.0.6 - 7.0.x and PHP 7.1.x.
 Add the repository
