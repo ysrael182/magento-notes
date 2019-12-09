@@ -78,6 +78,21 @@ Note: If the phpmyadmin's url is not available, you must to create a symlink:
 ```
 sudo ln -s /usr/share/phpmyadmin /var/www/html
 ```
+### Enable .htaccess Apache2
+Firt, enable the rewrite with the following command:
+```
+sudo a2enmod rewrite
+```
+Then, restart the apache:
+```
+sudo service apache2 restart
+```
+Finally, you must edit the file: /etc/apache2/sites-available/default, with the next information:
+
+```
+AllowOverride none to AllowOverride All
+```
+
 ### Enable vhost 
 First step copy the default 
 ```
