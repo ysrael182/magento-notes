@@ -87,7 +87,7 @@ Then, restart the apache:
 ```
 sudo service apache2 restart
 ```
-Finally, you must edit the file: /etc/apache2/sites-available/default, with the next information:
+Finally, you must edit the file: /etc/apache2/apache2.conf, with the next information:
 
 ```
 AllowOverride none to AllowOverride All
