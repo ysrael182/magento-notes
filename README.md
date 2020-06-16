@@ -116,7 +116,7 @@ vhost for multiple websites
 ```
 
 ### Swicth Php version
-Change the version of Php apache2:
+If you want to have multiple versions of php and swicth between versions (apache2), run:
 ```
 sudo a2dismod php7.2
 sudo a2enmod php7.0
