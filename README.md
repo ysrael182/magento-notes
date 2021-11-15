@@ -41,7 +41,7 @@ exit
 #reset the default password of root
 ```
 
-Then, whether no solutions have not worked to change the password, you can use the following 
+Then, whether no solutions have not worked to change the password, you can use the following (mysql version > 8)
 
 ```
 sudo mysql -u root -p
